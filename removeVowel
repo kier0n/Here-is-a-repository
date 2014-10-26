@@ -1,0 +1,17 @@
+def removeVowel(aString):
+    letterlist = []
+    for letter in aString:
+        letterlist.insert(0,letter)
+    vowels = ['a','e','i','o','u']
+    for vowel in vowels:
+        while vowel in letterlist:
+            letterlist.remove(vowel)
+    newstring = ""
+    letterlist.reverse()
+    for con in letterlist:
+        newstring += con
+    print (newstring)
+
+
+
+removeVowel("all day i dreamed about sex")
